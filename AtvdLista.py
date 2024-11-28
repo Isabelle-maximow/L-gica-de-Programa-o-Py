@@ -80,8 +80,8 @@ print(f"Do conjunto {lista} os pares são {listapar} e os impares são {listaimp
 vetor = []
 n = 0
 multi = 1                               # Declarar uma variavel com valor 1 ; add: multi *= num - para realizar a multiplicação
-for i in range (5):
-    num = int(input(f"Insira o {n + 1}° numero: "))
+for i in range (4):
+    num = int(input(f"Insira a {n + 1}° nota: "))
     n += 1
     multi *= num
     vetor.append(num)
