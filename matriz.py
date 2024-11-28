@@ -44,46 +44,28 @@ for linha in matriz:
     print(linha)
 """
 #atvd 1
-# 6x4
-"""matriz = []
-notas = []                           
-for i in range (6):
-    linhas = []
-    soma = 0
-    n = 0
-    qtd = 0
-    aluno = input("insira o nome do aluno: ")
-    for colunas in range (4):
-        nota = float(input(f"Insira a {n + 1}° nota do aluno {aluno}: "))  
-        qtd += 1
-        n + 1
-        linhas.append(notas)
-    media = sum(linhas) / qtd
-    matriz.append(linhas)"""
-#atvd 1
-# 6x4
+
+print("vamos descobrir a média! ")
 matriz = []
-notas = []                           
-for i in range (6):
-    linhas = []
-    n = 1
-    qtd = 0
-    aluno = input("insira o nome do aluno: ")
-    for colunas in range (4):
-        nota = float(input(f"Insira a {n}° nota do aluno {aluno}: ")) 
-        qtd += 1
-        n += 1
-        linhas.append(notas)
+for i in range(6):
+    notas = []
+    aluno = input("Insira o nome do aluno: ")
+    n = 0
+    for i in range(4):
+        nota = float(input(f"Insira a {n+1}ª nota do aluno {aluno}: "))
+        notas.append(nota)
         if nota == str:
             print("por favor, insira somente numeros!")
         else:
             continue 
-    soma = notas + notas + notas + notas
-    linhas.append(soma)
-    media = linhas // qtd
-    matriz.append(linhas)
+    soma = sum(notas)
+    media = soma / 4
+    matriz.append((aluno, notas, media))
 
-    print(linhas)
+print("\nResumo final:")
+for aluno, notas, media in matriz:
+    print(f"Aluno: {aluno} | Notas: {notas} | Média: {media:.2f}")
+
     
 
 
