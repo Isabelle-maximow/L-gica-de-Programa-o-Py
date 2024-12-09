@@ -41,9 +41,11 @@ while True:
                     del precos[produto]
                     print("Produto excluido! \nLista atualizada.")
                     print("--" * 20)
+                    for chave, valor in precos.items():
+                        print(f" {chave}: {valor}")
                 else:
                     ("Este produto não pertence ao estoque. ")
-                print(f"{chave}: {valor}")
+             
 
 
 
